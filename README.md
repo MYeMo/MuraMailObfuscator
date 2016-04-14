@@ -6,3 +6,6 @@ While installing the plugin, simply assign all SiteIDs you want the plugin to af
 
 ## Usage
 That's all. The Plugin obfuscates all E-Mail Addresses for you.
+
+## Dependencies
+MuraMailObfuscator requires jQuery.
