@@ -123,16 +123,16 @@
 							setTimeout(function() {
 								<!--- get all nodes, that contain the value of "jsidentifier", but ONLY text nodes (noteType==3) --->
 								var $e=$(s).find(":not(iframe, script)").contents().filter(function() {
-									if (this.nodeType == 3) {return $(this).text().indexOf('{#jsIdentifier#}')>(-1);} else {return false;}
+									if (this.nodeType == 3) {return $(this).text().indexOf('{#request.jsIdentifier#}')>(-1);} else {return false;}
 								});
 								$e=$e.parent();
 								<!--- replace html and href for each found element --->
 								$.each($e, function(i,v) {
 									var $v=$(v);
 									$v.html(function() {
-										return #jsSetContent#($v.html());
+										return #request.jsSetContent#($v.html());
 									}).attr('href', function() {
-										return #jsSetContent#($v.attr('href'));
+										return #request.jsSetContent#($v.attr('href'));
 									});
 								});
 							}, 300);<!--- setTimeout is to keep away a bit more bots --->
