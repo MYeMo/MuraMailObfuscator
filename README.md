@@ -17,6 +17,6 @@ MuraMailObfuscator automatically changes your HTML source code from this:
 
 To this:
 
-```<a href="noscheme:{B56EA301155D001001BD633AF0965731}">John Doe</a>```
+```<a href="urn:MB85C6598F691B32C4B513827EA48FD59O:{MB85C65970A276D8DE1935CA3D3C3EAC2O}{B85C65ACB003123ECB07B03459BC71BF}">John Doe</a>```
 
 And renders the real Email-Address client side.
