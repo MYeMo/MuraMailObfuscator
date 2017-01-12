@@ -2,7 +2,6 @@
 
 	<cffunction name="onApplicationLoad">
 		<cfargument name="$" />
-		
 		<cfset variables.pluginConfig.addEventHandler(this)>
 	</cffunction>
 
