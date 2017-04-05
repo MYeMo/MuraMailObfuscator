@@ -48,7 +48,7 @@
 					</cfif>
 				</cfloop>
 				<!--- if the mail doesn't exist in "groupedmails" yet, we'll add it --->
-				<cfif NOT local.foundMailExists>
+				<cfif NOT local.foundMailExists AND NOT listFindNoCase('png,jpg,jpeg,gif', listLast(local.foundMail, '.'))>
 					<cfset local.groupedMails[replace(createUUID(), "-", "", "ALL")] = local.foundMail>
 				</cfif>
 			</cfloop>
